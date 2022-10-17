@@ -8,3 +8,13 @@
 ### Users
  * Roles: admin,member,guest
  * Registration and login form
+### Security
+ * Password encryption
+### Languages and tools
+ * Java
+ * Spring Boot
+ * Thymeleaf
+### Target users
+ * People who enjoy building cars and know about them 
+ * People who know very little about their cars and don't know the problem which occured
+### Contact 
