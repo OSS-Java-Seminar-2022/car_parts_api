@@ -10,6 +10,11 @@
  * Registration and login form
 ### Security
  * Password encryption
+### Car part advisor
+ * Wide choice of car parts
+ * Filtering by car model/domestic market  
+ * Suggestion for your problems
+ * Alternative(domestic) parts
 ### Languages and tools
  * Java
  * Spring Boot
