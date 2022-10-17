@@ -6,5 +6,5 @@
 ## Features
 
 ### Users
- +* Roles: admin,member,guest
- +* Registration and login form
+ * Roles: admin,member,guest
+ * Registration and login form
