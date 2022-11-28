@@ -27,3 +27,4 @@
 ### Contact 
  * [Ante Pera](https://github.com/AntePera)
  * [Nikola Bošnjak](https://github.com/LunarStrain94)
+ * [Marin Šop](https://github.com/MarinSop)
