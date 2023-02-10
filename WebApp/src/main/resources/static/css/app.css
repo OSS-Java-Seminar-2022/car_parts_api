@@ -1,0 +1,29 @@
+html,body
+{
+    width: 100%;
+}
+
+#partList table, th, td {
+    border: 1px solid;
+  }
+#partList table
+{
+    width: 100%;
+    table-layout: fixed ;
+}
+
+#partList td
+{
+    width: 25%;
+}
+#partList td img
+{
+    width: 100%;
+}
+#partList th,td
+{
+    height: 100px;
+    text-align: center;
+}
+
+

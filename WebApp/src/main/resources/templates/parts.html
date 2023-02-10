@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="ISO-8859-1">
+    <title>Parts</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <a href="/admin">Admin dashboard</a>
+    <div class="row justify-content-center" style="height: 50px">
+        <div class="col-sm-2" style="text-align: center"><h3 class="align-middle">Part list</h3></div>
+    </div>
+
+    <div class="row justify-content-center">
+        <div class="col-sm-6">
+            <table style="margin-right: auto; margin-left: auto">
+                <tr>
+                    <th>Image</th>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Domestic Market</th>
+                    <th>Image</th>
+                    <th>Part description</th>
+                    <th>Price</th>
+
+                </tr>
+                <tr th:each="part : ${parts}">
+                    <td class="align-middle">
+                        <img alt="" th:src="@{'data:image/jpeg;base64,'+${part.showImage()}}" width="100%" height="100">
+                    </td>
+                    <td class="align-middle" th:text="${part.id}"></td>
+                    <td class="align-middle" th:text="${part.name}"></td>
+                    <td class="align-middle" th:text="${part.domesticMarket}"></td>
+                    <td class="align-middle" th:text="${part.partDescription}"></td>
+                    <td class="align-middle" th:text="${part.price}"></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <a th:href="@{/admin/parts(pageNo=${pageNo - 1},pageSize=${pageSize},sort=${sort})}">Previous</a>
+    <a th:href="@{/admin/parts(pageNo=${pageNo + 1},pageSize=${pageSize},sort=${sort})}">Next</a>
+</body>
+
+</html>
